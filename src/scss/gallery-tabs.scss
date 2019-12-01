@@ -1,0 +1,352 @@
+/*FEEDBACK*/
+.feedback {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+.feedback-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0;
+
+}
+.feedback-overlay {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
+  border-right:1px solid #e2e2e2;
+  border-left:1px solid #e2e2e2;
+
+
+}
+.feedback-gallery{
+  width: 100%;
+
+}
+.gallery-main-icon {
+  width: 100%;
+  text-align: center;
+  background-color: #f4f5f7;
+  position:relative;
+}
+.icon-sale{
+  color:white;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+.icon-name-section{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  bottom:110px;
+  right: 85px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #7b7b7c;
+  opacity:0.97;
+  color:white;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+.icon-name {
+  color:white;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+}
+.icon-job {
+  font-size: 16px;
+}
+.icon-job-section{
+  position:absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  bottom:32px;
+  right:0;
+  font-weight: normal;
+  width: 249px;
+  height: 106px;
+  background-color: #fff;
+  padding: 0 0;
+  box-shadow:   0 5px 5px rgba(0,0,0,0.05), 0 5px 5px rgba(0,0,0,0.15);
+  font-size: 16px;
+  z-index: 0;
+}
+.icon-job:before{
+  content:"";
+  display:block;
+  position: absolute; /* Абсолютное позиционирование */
+  left: 0; top:0; /* Положение треугольника */
+  border: 10px solid transparent; border-left: 10px solid black; border-top: 10px solid black;
+}
+.icon-job:after{
+  content:"";
+  display:block;
+  position: absolute; /* Абсолютное позиционирование */
+  right: 0; bottom:0; /* Положение треугольника */
+  border: 10px solid transparent; border-right: 10px solid black; border-bottom: 10px solid black;
+}
+.icon {
+  width: 100%;
+  height: 350px;
+
+}
+.gallery-thumbnails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1% 1%;
+  border:1px solid #e2e2e2;
+
+}
+.gallery-arrow {
+  font-size: 13px;
+  font-weight: bold;
+  padding: 9px 10px;
+  border: 1px solid #bbbbbb;
+  color: #dca08c;
+
+  cursor: pointer;
+  width: 1.8%;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  background-color: #2a2a2a;
+}
+.gallery-arrow:hover {
+  background-color: #18cfab;
+  border: 1px solid #18cfab;
+  color: white;
+}
+.gallery-thumb {
+  width: 14%;
+  height: 65px;
+  cursor: pointer;
+  background-color: #d3d3d3;
+}
+
+.last-img {
+  margin-right: 0;
+}
+
+
+/* Styling h1 and links
+––––––––––––––––––––––––––––––––– */
+h1[alt="Simple"] {color: white;}
+
+
+
+.starrating > input {display: none;}  /* Remove radio buttons */
+
+.starrating > label:before {
+  content: "★"; /* Star */
+  margin: 2px;
+  font-size: 20px;
+  font-family: FontAwesome;
+  display: inline-block;
+
+}
+
+.starrating > label
+{
+  color: gainsboro;
+  /* Start color when not clicked */
+}
+
+.starrating > input:checked ~ label
+{ color: #ffca08 ; } /* Set yellow color when star checked */
+
+.starrating > input:hover ~ label
+{ color: #ffca08 ;  } /* Set yellow color when star hover */
+.btn-tooltip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border:1px solid black;
+  width: 37px;
+  height: 37px;
+  border-radius: 0;
+  margin-top: 8px;
+}
+.btn-section{
+  position:absolute;
+  top:100px;
+  left:10px;
+  display: flex;
+  flex-direction: column;
+
+}
+.btn-tooltip:hover{
+  border:1px solid #d58e32;
+  color: #d58e32;
+}
+
+
+.gallery-tab-title{
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bolder;
+  color:#d58e32;
+  text-align: left;
+  border-bottom: 3px solid #e2e2e2;
+  position: relative;
+}
+.gallery-tab-title:after{
+  content:"";
+  position: relative;
+  bottom:-3px;
+  left: 0;
+  display: block;
+  height: 3px;
+  width: 44px;
+  background-color: #d58e32;
+}
+
+///Tabs
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+.tabs {
+
+  margin-top: 30px;
+}
+#tab-button {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: white;
+
+}
+#tab-button li {
+  display: flex;
+  width: 25%;
+  border:1px solid #e2e2e2;
+}
+#tab-button li a {
+  display: block;
+  width: 100%;
+  padding: .5em;
+  background: white;
+
+  text-align: center;
+  color: #000;
+  text-decoration: none;
+}
+.is-active li{
+  background-color:  #f4f5f7;
+}
+#tab-button li:not(:first-child) a {
+  border-left: none;
+}
+#tab-button li:hover{
+  background: #f4f5f7;
+}
+#tab-button li:hover a{
+  background: #f4f5f7;
+}
+#tab-button .is-active {
+  border-bottom-color: transparent;
+  background: #f4f5f7;
+}
+#tab-button .is-active a{
+  background: #f4f5f7;
+}
+
+.tab-button-outer {
+  display: none;
+}
+.tab-contents {
+  margin-top: 20px;
+
+}
+@media screen and (min-width: 768px) {
+  .tab-button-outer {
+    position: relative;
+    z-index: 2;
+    display: block;
+  }
+  .tab-select-outer {
+    display: none;
+  }
+  .tab-contents {
+    position: relative;
+    top: -1px;
+    margin-top: 0;
+  }
+}
+@media all and (min-width:769px){
+  .feedback{
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+
+}
+@media (min-width: 576px) and (max-width:768px){
+  .feedback{
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .container, .feedback-container{
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 360px) and (max-width:575px){
+  .feedback{
+    padding-right: 50px;
+    padding-left: 60px;
+  }
+  .feedback-container{
+    width: 100%;
+    max-width: 100%;
+  }
+  #tab-button {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: white;
+
+  }
+  #tab-button li {
+    display: flex;
+    width: 25%;
+    border:1px solid #e2e2e2;
+  }
+  #tab-button li a {
+    display: block;
+    width: 100%;
+    padding: .5em;
+    background: white;
+
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+  }
+  .tab-select-outer{
+    display: none;
+  }
+  option{
+    display: none;
+  }
+}

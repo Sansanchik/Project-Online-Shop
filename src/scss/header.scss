@@ -1,0 +1,542 @@
+.header{
+    width: 100%;
+    background-color:#363636;
+    height: 145px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+
+&__phone{
+     margin-left: 25px;
+     font-size: 17px;
+     color:white;
+     text-decoration: none;
+     align-self: start;
+ }
+
+&__phone:before{
+     content:"";
+     display:block;
+     width: 19px;
+     height: 32px;
+     position:relative;
+     top:30px;
+     right:25px;
+     background-image: url("../img/header/phone-icon-1200.png");
+     margin-right: 40px;
+}
+&__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d58e32;
+  width: 51px;
+  height: 49px;
+  border-radius: 6px;
+  position: relative;
+  color: white;
+  font-size: 20px;
+  padding-right: 7px;
+}
+  &-counter {
+    display: block;
+    color: white;
+    width: 28px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #363636;
+    border-radius: 50%;
+    position: absolute;
+    top: 12px;
+    left: 40px;
+  }
+
+  &__logo {
+    width: 165px;
+    height: 77px;
+    background-image: url('../img/header/header-logo.png');
+  }
+}
+.header-block a:hover {
+    text-decoration: none;
+    color:white;
+    border-bottom: 1px solid white;
+}
+.header-block{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price {
+    margin-left: 50px;
+}
+
+.modal-footer {
+    padding-right: 55px;
+    padding-left: 55px;
+}
+.modal-header{
+    width: 100%;
+    border-bottom: transparent;
+
+}
+.modal-body-box{
+    width: 1140px;
+    border-top:transparent;
+    padding-bottom: 0;
+}
+.modal-footer-box{
+    padding: 21px  67px 47px 67px;
+}
+.close{
+    padding-right: 14px;
+}
+.close-text{
+    width: 13px;
+    height: 13px;
+    margin-top: 12px;
+    margin: auto;
+    color:white;
+}
+.modal-dialog-box{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.modal-content-box{
+    width: 1140px;
+    height: 672px;
+    margin: auto;
+    justify-content: start;
+
+}
+.item-1 {
+    display: flex;
+    width: 1029px;
+    height: 218px;
+    border:1px solid #dadada;
+    padding: 31px 26px 27px 30px;
+    margin-bottom: 22px;
+    border-radius: 6px;
+    position:relative;
+}
+
+.item-label{
+    font-weight: bold;
+}
+.item-price-block{
+    display: flex;
+    box-sizing: content-box;
+}
+.input-block{
+    display: flex;
+}
+.item-name{
+    margin-bottom: 27px;
+    font-weight: bold;
+}
+.form-box{
+    width: 37px;
+    height: 37px;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 7px;
+}
+.input-label{
+    margin-right: 32px;
+    font-weight: bold;
+}
+.item-img{
+    width: 232px;
+    height: 158px;
+    background-image: url('../img/header/modal-chair1.png');
+
+}
+.item-img1{
+  margin-right: 78px;
+  width: 154px;
+  height: 166px;
+    background-image: url('../img/header/modal-chair2.png');
+}
+.item-info {
+  width: 745px;
+}
+.item-price{
+    color:white;
+    font-size:18px;
+    width: 104px;
+    height: 36px;
+    background-color: black;
+    text-align: center;
+    vertical-align: baseline;
+    margin-right: 81px;
+}
+.item-price1{
+    display:block;
+    width: 73px;
+    height: 18px;
+    font-size: 16px;
+    color:#dbdbdb;
+    text-decoration: line-through;
+    background-color: #fff;
+    text-align: center;
+    margin-right: 13px;
+}
+.item-price-block{
+    display: flex;
+    height: 37px;
+    padding: 0;
+}
+.modal-body input{
+    height: 37px!important;
+}
+.price-minus{
+    width: 37px;
+    height: 37px;
+    color:black;
+    border:1px solid black;
+    text-align: center;
+    margin-right: 7px;
+    cursor:pointer;
+}
+  .p-2 {
+    padding: .4rem!important;}
+.price-plus{
+    width: 37px;
+    height: 37px;
+    color:#d58e32;
+    border:1px solid #d58e32;
+    text-align: center;
+    margin-right: 88px;
+    cursor:pointer;
+}
+.total-cost{
+    margin-right: 40px;
+}
+.final-price{
+    display:block;
+    width: 84px;
+    height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+  position: absolute;
+  right: 40px;
+}
+.final-price-title{
+    position: absolute;
+    top:30px;
+    right:40px;
+    width: 42px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: normal;
+    margin-right: 30px;
+}
+.final-price-title:after{
+    clear: both;
+}
+.header-btn-checkout{
+    border-radius: 0;
+    background-color: #d58e32;
+    width: 134px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bolder;
+    font-size: 13px;
+}
+.header-btn-continue{
+    border-radius: 0;
+    background-color: #939393;
+    width: 134px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bolder;
+    font-size: 13px;
+}
+@media all and (min-width:1200px){
+  .header{
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .header-block{
+    max-width: 100%;
+    width: 100%;
+  }
+  .item-info{
+    display: flex;
+    box-sizing: unset;
+    width: 800px;
+    box-sizing: unset;
+
+  }
+
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+  .item-price-block{
+    display: flex;
+    width: 150px;
+    margin: 0 0;
+  }
+  .col-lg-6{
+    margin: 0 0;
+  }
+  .item-price{
+    margin: 0;
+  }
+  .input-block{
+    box-sizing: border-box;
+  }
+
+}
+@media (min-width:769px) and (max-width:1199px){
+  .header{
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .header-block{
+    max-width: 100%;
+    width: 100%;
+  }
+  .modal-content-box{
+    width: 750px;
+    height: 432px;
+    margin: auto;
+    justify-content: start;
+
+  }
+  .item-name{
+    font-weight: bold;
+  }
+  .item-label{
+    font-weight: bolder;
+  }
+  .item-img{
+    width: 183px;
+    height: 128px;
+    margin-right: 20px;
+    background-image: url('../img/header/modal-chair768.png');
+  }
+  .item-info{
+    flex-direction: column;
+  }
+  .row{
+    flex-direction: column;
+
+  }
+  .final-price-title{
+    top:150px;
+    right:40px;
+  }
+  .item-1{
+    width: 671px;
+    height: 218px;
+    padding: 20px 20px;
+
+  }
+  .price-plus{
+    margin-right: 58px;
+  }
+  .input-block{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .col-12, .col-sm-12, .col-md-12{
+    padding: 0 0;
+  }
+  .total-cost{
+    width: 620px;
+  }
+  .item-2{
+    display: none;
+  }
+
+}
+@media (min-width: 576px) and (max-width:768px){
+  .header{
+    padding-right: 45px;
+    padding-left: 60px;
+
+  }
+
+  .container, .header-block{
+    max-width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .header-block{
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .modal-content-box{
+    width: 600px;
+    height: 432px;
+    margin: auto;
+    justify-content: start;
+
+  }
+
+  .item-name{
+    font-weight: bold;
+  }
+  .item-label{
+    font-weight: bolder;
+  }
+  .item-2{
+    display: none;
+  }
+  .item-1{
+    width: 550px;
+
+  }
+  .item-img{
+    width: 183px;
+    height: 128px;
+    background-image: url('../img/header/modal-chair768.png');
+  }
+}
+
+@media (min-width: 360px) and (max-width:575px) {
+  .header{
+    padding-right: 50px;
+    padding-left: 60px;
+
+  }
+  .container .header-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+  }
+  .header-block{
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
+
+  }
+  .header__phone:before{
+    display: none;
+  }
+  .header__phone{
+    width: 145px;
+    margin-top: 1rem;
+    font-weight: bolder;
+    margin-left: 0;
+  }
+  .header__logo{
+    width: 114px;
+    height: 53px;
+    background-image: url('../img/header/header-logo480.png');
+  }
+  .header__box{
+    width: 45px;
+    height: 43px;
+  }
+  .header__box-counter{
+    display:block;
+    color:white;
+    width: 25px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #363636;
+    border-radius: 50%;
+    position:absolute;
+    top: 10px;
+    left:33px;
+  }
+  .item-1{
+    margin: 0;
+  }
+  .total-cost{
+    margin-top: 15px;
+    width: 346px;
+  }
+  .modal-footer-box{
+    padding: 0 20px 20px 20px;
+  }
+  .modal-content-box{
+    width: 420px;
+    height: 440px;
+    margin: auto;
+    justify-content: start;
+
+  }
+  .modal-body-box{
+    padding: 10px 0 0 20px;
+  }
+  .item-price1{
+    position:absolute;
+    top:-30px;
+    left:10px;
+  }
+  .item-price{
+    position:relative;
+
+  }
+  .input-label{
+    position:absolute;
+    top:-30px;
+    left: 15px;
+  }
+  .input-form{
+    position: relative;
+  }
+  .input-block{
+    position:absolute;
+    left:15px;
+    bottom:15px;
+  }
+  .item-2{
+    display: none;
+  }
+  .item-1{
+    width: 366px;
+    height: 276px;
+    padding-top: 20px;
+    position: relative;
+
+  }
+  .price-info{
+    height: 120px;
+  }
+  .item-img{
+    width: 160px;
+    height: 114px;
+    background-image: url('../img/header/modal-chair360.png');
+  }
+  .item-name{
+    font-weight: bold;
+    font-size:16px;
+
+  }
+  .col-3{
+    padding: 0;
+  }
+  .item-label{
+    font-weight: bolder;
+  }
+  .item-img{
+    background-image: url('../img/header/modal-chair360.png');
+    padding-right: 0;
+    width: 150px;
+    margin-right: 10px;
+  }
+  .item-price-block{
+    padding-left: 20px;
+  }
+  .final-price-title{
+    position: absolute;
+    bottom: 300px;
+  }
+
+}
