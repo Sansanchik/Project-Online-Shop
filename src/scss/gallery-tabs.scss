@@ -3,14 +3,12 @@
   display: flex;
   justify-content: center;
   width: 100%;
-
 }
 .feedback-container{
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 0;
-
+  padding: 0;
 }
 .feedback-overlay {
   display: flex;
@@ -18,15 +16,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: end;
-
   border-right:1px solid #e2e2e2;
   border-left:1px solid #e2e2e2;
-
-
 }
 .feedback-gallery{
   width: 100%;
-
 }
 .gallery-main-icon {
   width: 100%;
@@ -80,7 +74,7 @@
   width: 249px;
   height: 106px;
   background-color: #fff;
-  padding: 0 0;
+  padding: 0;
   box-shadow:   0 5px 5px rgba(0,0,0,0.05), 0 5px 5px rgba(0,0,0,0.15);
   font-size: 16px;
   z-index: 0;
@@ -102,7 +96,6 @@
 .icon {
   width: 100%;
   height: 350px;
-
 }
 .gallery-thumbnails {
   display: flex;
@@ -111,7 +104,6 @@
   width: 100%;
   padding: 1% 1%;
   border:1px solid #e2e2e2;
-
 }
 .gallery-arrow {
   font-size: 13px;
@@ -142,13 +134,7 @@
 .last-img {
   margin-right: 0;
 }
-
-
-/* Styling h1 and links
-––––––––––––––––––––––––––––––––– */
 h1[alt="Simple"] {color: white;}
-
-
 
 .starrating > input {display: none;}  /* Remove radio buttons */
 
@@ -158,20 +144,17 @@ h1[alt="Simple"] {color: white;}
   font-size: 20px;
   font-family: FontAwesome;
   display: inline-block;
-
 }
 
 .starrating > label
 {
   color: gainsboro;
-  /* Start color when not clicked */
 }
-
 .starrating > input:checked ~ label
-{ color: #ffca08 ; } /* Set yellow color when star checked */
+{ color: #ffca08 ; }
 
 .starrating > input:hover ~ label
-{ color: #ffca08 ;  } /* Set yellow color when star hover */
+{ color: #ffca08 ;  }
 .btn-tooltip{
   display: flex;
   justify-content: center;
@@ -189,14 +172,11 @@ h1[alt="Simple"] {color: white;}
   left:10px;
   display: flex;
   flex-direction: column;
-
 }
 .btn-tooltip:hover{
   border:1px solid #d58e32;
   color: #d58e32;
 }
-
-
 .gallery-tab-title{
   text-transform: uppercase;
   font-size: 20px;
@@ -223,7 +203,6 @@ body {
   font-weight: 300;
 }
 .tabs {
-
   margin-top: 30px;
 }
 #tab-button {
@@ -245,7 +224,6 @@ body {
   width: 100%;
   padding: .5em;
   background: white;
-
   text-align: center;
   color: #000;
   text-decoration: none;
@@ -294,11 +272,9 @@ body {
 }
 @media all and (min-width:769px){
   .feedback{
-    padding-right: 20%;
-    padding-left: 20%;
+    //padding-right: 5%;
+    //padding-left: 5%;
   }
-
-
 }
 @media (min-width: 576px) and (max-width:768px){
   .feedback{
@@ -324,7 +300,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-
     background-color: white;
 
   }

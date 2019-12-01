@@ -1,6 +1,7 @@
 .banner-section{
   display: flex;
   height: 33rem;
+  position: relative;
   background:#e8edf7;
    flex-direction: column;
   flex-wrap: wrap;
@@ -12,8 +13,10 @@
 
 }
 .banner-img{
+  position: absolute;
+  top: 230px;
+  left: 0;
   width:80%;
-
   margin-left: 39px;
   margin-bottom: 30px;
 }

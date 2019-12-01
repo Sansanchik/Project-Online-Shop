@@ -101,6 +101,15 @@
     margin: 0 auto;
     max-width: 100%;
   }
+  .features-item-head{
+    width: 100%;
+    font-size: 16px;
+  }
+  .features-item-description {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+  }
   .feature-container{
     width: 50%;
   }
@@ -138,10 +147,12 @@
   }
   .features-item-head{
     width: 100%;
+    font-size: 16px;
   }
   .features-item-description{
     display: block;
     width: 100%;
+    font-size: 16px;
   }
   .features-item-head{
     display:block;
