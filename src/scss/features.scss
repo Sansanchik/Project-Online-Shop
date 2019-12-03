@@ -5,18 +5,19 @@
 }
 .feature-container{
   width: 100%;
-  padding: 0 0;
+  padding: 0;
 }
 .features-block {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 0;
+  margin: 0;
   justify-content: space-between;
 }
 .features-item-head{
   text-transform: uppercase;
   font-weight: bolder;
+  padding-top: 20px;
   font-size: 20px;
 }
 
@@ -26,22 +27,24 @@
 }
 .features-item{
   display: flex;
+  max-width: 22%;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   flex-flow: wrap;
   border:1px solid #bdbdbd;
   justify-content: center;
   align-items: end;
-  margin-top: 30px;
-  padding: 22px;
-  height: 121px;
+  margin: 30px 5px 5px 5px;
+  padding: 25px;
+
+  //height: 121px;
 }
 .features-item-icon{
   display: flex;
   justify-content: center;
   align-items: center;
   position:absolute;
-  bottom:90px;
+  top: -30px;
   width: 62px;
   height: 62px;
   border-radius: 50%;
@@ -63,35 +66,44 @@
 .features-item:hover .features-item-head{
   color:#e0a38e;
 }
-
-@media all and (min-width: 769px){
-  .col-lg-3{
-    padding-top: 50px;
-    max-width:24%;
-  }
+@media (min-width:769px) and (max-width:1199px){
   .features-item{
     display: flex;
-    flex-direction: column;
+    max-width: 22%;
+    position: relative;
+    flex-direction: row;
     flex-flow: wrap;
+    border:1px solid #bdbdbd;
     justify-content: center;
-    padding-bottom: 20px;
+    align-items: end;
+    margin: 30px 5px 5px 5px;
+    padding: 25px;
   }
+  .features-item-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -30px;
+    }
 }
-
 @media (min-width: 360px) and (max-width: 575px){
   .features-item-icon{
     bottom: 90px;
   }
   .features-item{
-    word-break: break-word;
+    max-width: 45%;
+    width: 45%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: wrap;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    padding: 50px 10px 20px 10px;
-    height: 121px;
+    padding-top: 40px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+    height: 70px;
   }
   .feature-container .features-item:not(:first-child){
     margin-top: 70px;
@@ -148,14 +160,12 @@
   .features-item-head{
     width: 100%;
     font-size: 16px;
+    display:block;
   }
   .features-item-description{
     display: block;
     width: 100%;
     font-size: 16px;
-  }
-  .features-item-head{
-    display:block;
   }
   .features-block {
     display: flex;

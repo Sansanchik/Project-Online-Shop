@@ -1,21 +1,20 @@
 body {
   min-width: 320px;
-  max-width: 1170px;
   margin: 0 auto;
-}
-* {
-  padding: 0;
-  margin: 0;
 }
 .navbar{
   height: 54px;
   background-color:#434343;
 }
+.navbar-container {
+  width: 100%;
+  justify-content: space-between;
+}
 .top-menu-section{
   box-shadow:   0 5px 5px rgba(0,0,0,0.05), 0 5px 5px rgba(0,0,0,0.15);
 }
 .navbar-nav{
-  height: 83px;
+  height: 85px;
 }
 .nav-item{
   margin-right: 30px;
@@ -28,7 +27,6 @@ body {
 .navbar a {
   text-decoration: none;
   color:white;
-
 }
 .navbar a:hover {
   border-bottom: 1px solid white;
@@ -46,46 +44,92 @@ body {
 }
 .modal-header{
   border-bottom: transparent;
-  //width: 4g56px;
 }
 .modal-body input{
-  height: 37px;
+  height: 51px;
 }
 .modal-header .close{
   background-color:#2a2a2a;
   opacity: 1;
-  width: 37px;
-  height: 37px;
+  width: 40px;
+  height: 40px;
 }
 .fa-times{
-  line-height: 7px;
   display: block;
   height: 33px;
-  width: 20px;
+  width: 13px;
   color:white;
   padding-bottom: 20px;
 }
-.modal-title {
-  color: #2a2a2a;
+.modal-title{
+  color:#2a2a2a;
   margin-bottom: 31px;
 }
 .close-text{
   display: block;
   height: 13px;
   width: 13px;
-  line-height: 37px;
+  line-height: 1px;
   padding-right: 20px;
-  text-align: center;
+  margin-top: -10px;
+  margin-left: -2px;
 }
 .modal-body{
-  //width: 456px;
+  width: 456px;
   padding: 21px 46px 34px 46px;
 }
 .modal-content{
-  //width: 457px;
+  width: 457px;
   border-radius: 0;
   box-shadow:   0 5px 5px rgba(0,0,0,0.05), 0 3px 2px rgba(0,0,0,0.15);
 }
 .modal-open{
   background: #666c75;//0.69
+}
+@media all and (min-width:769px){
+  .header-block{
+    max-width: 100%;
+    width: 100%;
+  }
+ }
+
+@media (min-width: 576px) and (max-width:768px){
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .row{
+      max-width: 100%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 575px){
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .nav-item{
+    display: block;
+    margin-right: 10px;
+  }
+  .row{
+    max-width: 100%;
+    justify-content: space-between;
+  }
+  .modal-body{
+    width: 380px;
+    padding: 0 20px 10px 20px;
+  }
+  .modal-title{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .modal-content{
+    width: 400px;
+    margin-left: 13%;
+    margin-top: 5%;
+  }
 }
